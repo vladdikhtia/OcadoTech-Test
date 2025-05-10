@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		314DF7FD2DCE9B3500E4FE23 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DF7F72DCE9B3500E4FE23 /* BrowseView.swift */; };
+		314DF7FE2DCE9B3500E4FE23 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DF7F82DCE9B3500E4FE23 /* CheckoutView.swift */; };
+		314DF8002DCE9B3500E4FE23 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DF7FA2DCE9B3500E4FE23 /* HomeView.swift */; };
+		314DF8012DCE9B3500E4FE23 /* OcadoTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DF7FB2DCE9B3500E4FE23 /* OcadoTestApp.swift */; };
+		314DF8022DCE9B3500E4FE23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 314DF7F42DCE9B3500E4FE23 /* Preview Assets.xcassets */; };
+		314DF8032DCE9B3500E4FE23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 314DF7F62DCE9B3500E4FE23 /* Assets.xcassets */; };
+		314DF80D2DCE9BE900E4FE23 /* TextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DF80A2DCE9BE900E4FE23 /* TextModifier.swift */; };
+		314DF80F2DCF4D1F00E4FE23 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DF80E2DCF4D1F00E4FE23 /* Header.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		314DF7DA2DCE944000E4FE23 /* OcadoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OcadoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		314DF7F42DCE9B3500E4FE23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		314DF7F62DCE9B3500E4FE23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		314DF7F72DCE9B3500E4FE23 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		314DF7F82DCE9B3500E4FE23 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		314DF7FA2DCE9B3500E4FE23 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		314DF7FB2DCE9B3500E4FE23 /* OcadoTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcadoTestApp.swift; sourceTree = "<group>"; };
+		314DF80A2DCE9BE900E4FE23 /* TextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifier.swift; sourceTree = "<group>"; };
+		314DF80E2DCF4D1F00E4FE23 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		314DF7D72DCE944000E4FE23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		314DF7D12DCE944000E4FE23 = {
+			isa = PBXGroup;
+			children = (
+				314DF7FC2DCE9B3500E4FE23 /* OcadoTest */,
+				314DF7DB2DCE944000E4FE23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		314DF7DB2DCE944000E4FE23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				314DF7DA2DCE944000E4FE23 /* OcadoTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		314DF7F52DCE9B3500E4FE23 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				314DF7F42DCE9B3500E4FE23 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		314DF7FC2DCE9B3500E4FE23 /* OcadoTest */ = {
+			isa = PBXGroup;
+			children = (
+				314DF7FB2DCE9B3500E4FE23 /* OcadoTestApp.swift */,
+				314DF7F72DCE9B3500E4FE23 /* BrowseView.swift */,
+				314DF7F82DCE9B3500E4FE23 /* CheckoutView.swift */,
+				314DF7FA2DCE9B3500E4FE23 /* HomeView.swift */,
+				314DF80C2DCE9BE900E4FE23 /* Utils */,
+				314DF7F52DCE9B3500E4FE23 /* Preview Content */,
+				314DF7F62DCE9B3500E4FE23 /* Assets.xcassets */,
+				314DF80E2DCF4D1F00E4FE23 /* Header.swift */,
+			);
+			path = OcadoTest;
+			sourceTree = "<group>";
+		};
+		314DF80B2DCE9BE900E4FE23 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				314DF80A2DCE9BE900E4FE23 /* TextModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		314DF80C2DCE9BE900E4FE23 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				314DF80B2DCE9BE900E4FE23 /* Modifiers */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		314DF7D92DCE944000E4FE23 /* OcadoTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 314DF7E82DCE944100E4FE23 /* Build configuration list for PBXNativeTarget "OcadoTest" */;
+			buildPhases = (
+				314DF7D62DCE944000E4FE23 /* Sources */,
+				314DF7D72DCE944000E4FE23 /* Frameworks */,
+				314DF7D82DCE944000E4FE23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OcadoTest;
+			packageProductDependencies = (
+			);
+			productName = OcadoTest;
+			productReference = 314DF7DA2DCE944000E4FE23 /* OcadoTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		314DF7D22DCE944000E4FE23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					314DF7D92DCE944000E4FE23 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 314DF7D52DCE944000E4FE23 /* Build configuration list for PBXProject "OcadoTest" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 314DF7D12DCE944000E4FE23;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 314DF7DB2DCE944000E4FE23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				314DF7D92DCE944000E4FE23 /* OcadoTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		314DF7D82DCE944000E4FE23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				314DF8022DCE9B3500E4FE23 /* Preview Assets.xcassets in Resources */,
+				314DF8032DCE9B3500E4FE23 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		314DF7D62DCE944000E4FE23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				314DF7FD2DCE9B3500E4FE23 /* BrowseView.swift in Sources */,
+				314DF7FE2DCE9B3500E4FE23 /* CheckoutView.swift in Sources */,
+				314DF8002DCE9B3500E4FE23 /* HomeView.swift in Sources */,
+				314DF8012DCE9B3500E4FE23 /* OcadoTestApp.swift in Sources */,
+				314DF80F2DCF4D1F00E4FE23 /* Header.swift in Sources */,
+				314DF80D2DCE9BE900E4FE23 /* TextModifier.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		314DF7E62DCE944100E4FE23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		314DF7E72DCE944100E4FE23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		314DF7E92DCE944100E4FE23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OcadoTest/Preview Content\"";
+				DEVELOPMENT_TEAM = H9TD9ZY99U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dikhtia.OcadoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		314DF7EA2DCE944100E4FE23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OcadoTest/Preview Content\"";
+				DEVELOPMENT_TEAM = H9TD9ZY99U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dikhtia.OcadoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		314DF7D52DCE944000E4FE23 /* Build configuration list for PBXProject "OcadoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				314DF7E62DCE944100E4FE23 /* Debug */,
+				314DF7E72DCE944100E4FE23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		314DF7E82DCE944100E4FE23 /* Build configuration list for PBXNativeTarget "OcadoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				314DF7E92DCE944100E4FE23 /* Debug */,
+				314DF7EA2DCE944100E4FE23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 314DF7D22DCE944000E4FE23 /* Project object */;
+}
