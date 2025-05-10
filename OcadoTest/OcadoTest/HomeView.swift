@@ -12,12 +12,18 @@ struct HomeView: View {
         TabView {
             BrowseView()
                 .tabItem {
-                    Label("Browse", systemImage: "square.grid.3x3.fill")
+                    Label(
+                        "Browse",
+                        systemImage: "square.grid.3x3.fill"
+                    )
                 }
             
             CheckoutView()
                 .tabItem {
-                    Label("Checkout", systemImage: "clock")
+                    Label(
+                        "Checkout",
+                        systemImage: "clock"
+                    )
                 }
         }
     }
