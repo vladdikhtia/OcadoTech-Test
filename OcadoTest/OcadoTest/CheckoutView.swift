@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct CheckoutView: View {
+    @ObservedObject var homeViewModel: HomeViewModel
+    
     var body: some View {
         VStack(spacing: 0) {
             Header(type: .checkout)
             
             ScrollView(.vertical, showsIndicators: false) {
-                ForEach(0..<15) { _ in
-                    Text("Item")
+                ForEach(homeViewModel.products, id: \.productId) { product in
+                    Text(product.description)
                         .padding(.vertical, 10)
                 }
             }
@@ -22,7 +24,7 @@ struct CheckoutView: View {
             .background(.gray.opacity(0.1))
             
             Button {
-                
+
             } label: {
                 Text("Checkout")
                     .padding(.vertical, 16)
@@ -37,9 +39,12 @@ struct CheckoutView: View {
             }
             Divider()
         }
+        .task {
+            homeViewModel.getProducts()
+        }
     }
 }
-
-#Preview {
-    CheckoutView()
-}
+//
+//#Preview {
+//    CheckoutView(homeViewModel: <#HomeViewModel#>)
+//}
