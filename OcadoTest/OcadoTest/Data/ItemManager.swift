@@ -20,6 +20,18 @@ class ItemManager: ItemManagerProtocol {
 }
 
 class MockItemManager: ItemManagerProtocol {
+    let exampleItem = ItemModel(
+        productId: "mock-2",
+        description: "Mock Water Bottle",
+        price: "22.50 £",
+        promotions: [
+            PromotionModel(type: "discount", value: "10.00 £")
+        ],
+        isFavorite: true,
+        inStock: 12,
+        image: "bottle"
+    )
+    
     func parseItems(from json: Data) throws -> [ItemModel] {
         return [
             ItemModel(
@@ -29,7 +41,7 @@ class MockItemManager: ItemManagerProtocol {
                 promotions: [],
                 isFavorite: true,
                 inStock: 5,
-                image: "coffee.png"
+                image: "coffee"
             ),
             ItemModel(
                 productId: "mock-2",
@@ -40,7 +52,7 @@ class MockItemManager: ItemManagerProtocol {
                 ],
                 isFavorite: false,
                 inStock: 12,
-                image: "bottle.png"
+                image: "bottle"
             )
         ]
     }

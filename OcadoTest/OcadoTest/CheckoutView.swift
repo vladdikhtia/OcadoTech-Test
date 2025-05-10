@@ -16,15 +16,14 @@ struct CheckoutView: View {
             
             ScrollView(.vertical, showsIndicators: false) {
                 ForEach(homeViewModel.products, id: \.productId) { product in
-                    Text(product.description)
-                        .padding(.vertical, 10)
+                    ProductCard(product: product)
                 }
             }
             .frame(maxWidth: .infinity)
             .background(.gray.opacity(0.1))
             
             Button {
-
+                
             } label: {
                 Text("Checkout")
                     .padding(.vertical, 16)

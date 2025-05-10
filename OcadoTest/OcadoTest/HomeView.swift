@@ -13,7 +13,7 @@ struct HomeView: View {
     init(itemManager: ItemManagerProtocol = ItemManager()) {
         self._homeViewModel = StateObject(wrappedValue: HomeViewModel(itemManager: itemManager))
     }
-   
+    
     var body: some View {
         TabView {
             BrowseView()
