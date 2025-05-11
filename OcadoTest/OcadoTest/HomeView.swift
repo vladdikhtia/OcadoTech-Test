@@ -16,7 +16,7 @@ struct HomeView: View {
     
     var body: some View {
         TabView {
-            BrowseView()
+            BrowseView(homeViewModel: homeViewModel)
                 .tabItem {
                     Label(
                         "Browse",
@@ -32,9 +32,14 @@ struct HomeView: View {
                     )
                 }
         }
+        .task {
+            homeViewModel.getProducts()
+        }
     }
 }
 
+#if DEBUG
 #Preview {
     HomeView()
 }
+#endif
