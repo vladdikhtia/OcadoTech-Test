@@ -16,9 +16,14 @@ struct ItemModel: Codable {
     let description: String
     let price: String
     let promotions: [PromotionModel]
-    let isFavorite: Bool
+    var isFavorite: Bool
     let inStock: Int
     let image: String
+    var quantity: Int = 0
+    
+    enum CodingKeys: String, CodingKey {
+        case productId, description, price, promotions, isFavorite, inStock, image
+    }
 }
 
 struct PromotionModel: Codable {

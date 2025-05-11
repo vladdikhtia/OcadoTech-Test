@@ -12,7 +12,7 @@ final class HomeViewModel: ObservableObject {
     @Published var checkoutItems: [ItemModel] = []
     @Published var totalValue: Double = 0
     @Published var isBillPresented: Bool = false
-
+    
     let itemManager: ItemManagerProtocol
     
     init(itemManager: ItemManagerProtocol) {
@@ -34,7 +34,7 @@ final class HomeViewModel: ObservableObject {
         }
     }
     
-    func updateCheckoutItems() {
+    private func updateCheckoutItems() {
         DispatchQueue.main.async {
             withAnimation {
                 self.checkoutItems = self.products.filter { $0.quantity > 0 }

@@ -11,39 +11,49 @@ struct CheckoutView: View {
     @ObservedObject var homeViewModel: HomeViewModel
     
     var body: some View {
-        VStack(spacing: 0) {
-            Header(type: .checkout)
-            
-            ScrollView(.vertical, showsIndicators: false) {
-                ForEach(homeViewModel.products, id: \.productId) { product in
-                    ProductCard(product: product)
+        ZStack{
+            VStack(spacing: 0) {
+                Header(type: .checkout, totalValue: $homeViewModel.totalValue)
+                
+                if !homeViewModel.checkoutItems.isEmpty {
+                ReusableScroll(type: .checkout, homeViewModel: homeViewModel)
+                
+                    Button {
+                        withAnimation {
+                            homeViewModel.isBillPresented.toggle()
+                        }
+                    } label: {
+                        Text("Checkout")
+                            .padding(.vertical, 16)
+                            .frame(maxWidth: .infinity, alignment: .center)
+                            .customText(
+                                font: .headline,
+                                color: .primary,
+                                backgroundColor: .yellow
+                            )
+                            .clipShape(.rect(cornerRadius: 10))
+                            .padding(16)
+                    }
+                    
+                    Divider()
+                } else {
+                    Label("Add some items to your cart", systemImage: "cart")
+                        .font(.headline.bold())
+                        .frame(maxHeight: .infinity, alignment: .center)
                 }
             }
-            .frame(maxWidth: .infinity)
-            .background(.gray.opacity(0.1))
             
-            Button {
-                
-            } label: {
-                Text("Checkout")
-                    .padding(.vertical, 16)
-                    .frame(maxWidth: .infinity, alignment: .center)
-                    .customText(
-                        font: .headline,
-                        color: .primary,
-                        backgroundColor: .yellow
-                    )
-                    .clipShape(.rect(cornerRadius: 10))
-                    .padding(16)
+            if homeViewModel.isBillPresented {
+                BillAlert(isPresented: $homeViewModel.isBillPresented, productIds: homeViewModel.checkoutItems.map({$0.productId}))
             }
-            Divider()
         }
-        .task {
-            homeViewModel.getProducts()
-        }
+        
     }
 }
-//
-//#Preview {
-//    CheckoutView(homeViewModel: <#HomeViewModel#>)
-//}
+
+#if DEBUG
+#Preview {
+    let mockManager = MockItemManager()
+    CheckoutView(homeViewModel: HomeViewModel(itemManager: mockManager))
+}
+#endif
