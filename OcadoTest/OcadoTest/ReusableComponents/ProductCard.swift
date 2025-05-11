@@ -8,30 +8,28 @@
 import SwiftUI
 
 struct ProductCard: View {
-    @State var quantity: Int = 1
-    let product: ItemModel
+    @Binding var product: ItemModel
+    @ObservedObject var homeViewModel: HomeViewModel
     @State var isFavorite: Bool = false
+    @State var presentedInStock: Bool = false
+    
     var body: some View {
         HStack(spacing: 0) {
-            ZStack(alignment: .topLeading){
-                Image(product.image.replacingOccurrences(of: ".png", with: ""))
-                    .resizable()
-                    .scaledToFit()
-                
-                Button {
-                    isFavorite.toggle()
-                } label: {
-                    Image(systemName: isFavorite ? "heart.fill" : "heart")
-                        .foregroundStyle(.blue)
-                }
-                .padding(10)
-            }
+            productImage
             
             VStack(alignment: .leading, spacing: 8) {
                 Text(product.description)
-                Text(product.price)
-                    .customText(font: .subheadline.bold(), color: .red)
-                    .padding(.top, 20)
+                
+                HStack{
+                    Text(product.price)
+                    Spacer()
+                    if presentedInStock {
+                        Text("Max: \(product.inStock)")
+                            .padding(.trailing, 4)
+                    }
+                }
+                .customText(font: .subheadline.bold(), color: .red)
+                .padding(.top, 20)
                 
                 quantitySector
             }
@@ -49,12 +47,27 @@ struct ProductCard: View {
             isFavorite = product.isFavorite
         }
     }
+    var productImage: some View {
+        ZStack(alignment: .topLeading){
+            Image(product.image.replacingOccurrences(of: ".png", with: ""))
+                .resizable()
+                .scaledToFit()
+            
+            Button {
+                product.isFavorite.toggle()
+            } label: {
+                Image(systemName: product.isFavorite ? "heart.fill" : "heart")
+                    .foregroundStyle(.blue)
+            }
+            .padding(10)
+        }
+    }
     
     var quantitySector: some View {
         HStack {
             countButton(title: "-")
             
-            Text("\(quantity)")
+            Text("\(product.quantity)")
                 .frame(maxWidth: .infinity, alignment: .center)
             
             countButton(title: "+")
@@ -70,10 +83,17 @@ struct ProductCard: View {
     func countButton(title: String) -> some View {
         Button {
             if title == "-" {
-                guard quantity > 1 else {return}
-                quantity -= 1
+                guard product.quantity > 0 else {
+                    return
+                }
+                presentedInStock = false
+                homeViewModel.updateQuantity(for: product.productId, with: product.quantity - 1)
             } else {
-                quantity += 1
+                guard product.quantity < product.inStock else {
+                    presentedInStock = true
+                    return
+                }
+                homeViewModel.updateQuantity(for: product.productId, with: product.quantity + 1)
             }
         } label: {
             Text(title)
@@ -85,9 +105,4 @@ struct ProductCard: View {
                 )
         }
     }
-}
-
-#Preview {
-    let mockManager = MockItemManager()
-    ProductCard(product: mockManager.exampleItem)
 }

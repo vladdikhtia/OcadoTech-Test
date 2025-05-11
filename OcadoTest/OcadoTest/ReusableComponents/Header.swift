@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum HeaderType {
+enum PageType {
     case browse, checkout
     
     var title: String {
@@ -21,7 +21,8 @@ enum HeaderType {
 }
 
 struct Header: View {
-    let type: HeaderType
+    let type: PageType
+    @Binding var totalValue: Double
     
     var body: some View {
         VStack(spacing: 0) {
@@ -29,10 +30,8 @@ struct Header: View {
                 Text(type.title)
                     .frame(maxWidth: .infinity, alignment: .center)
                 
-                if type == .checkout {
-                    Text("30.20 £")
+                    Text("\(totalValue.formatted()) £")
                         .font(.headline)
-                }
             }
             .padding(16)
             .customText(
@@ -47,7 +46,7 @@ struct Header: View {
 
 #if DEBUG
 #Preview {
-    Header(type: .browse)
-    Header(type: .checkout)
+    Header(type: .browse, totalValue: .constant(0))
+    Header(type: .checkout, totalValue: .constant(0))
 }
 #endif

@@ -20,6 +20,8 @@
 		314DF8212DCF8DC600E4FE23 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DF8202DCF8DC600E4FE23 /* ProductCard.swift */; };
 		314DF8262DCFD25800E4FE23 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DF8232DCFD25800E4FE23 /* ItemManager.swift */; };
 		314DF8272DCFD25800E4FE23 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DF8242DCFD25800E4FE23 /* ItemModel.swift */; };
+		314DF8292DCFD84400E4FE23 /* ReusableScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DF8282DCFD84400E4FE23 /* ReusableScroll.swift */; };
+		314DF82B2DCFF7DC00E4FE23 /* BillAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DF82A2DCFF7DC00E4FE23 /* BillAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		314DF8202DCF8DC600E4FE23 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
 		314DF8232DCFD25800E4FE23 /* ItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
 		314DF8242DCFD25800E4FE23 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		314DF8282DCFD84400E4FE23 /* ReusableScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableScroll.swift; sourceTree = "<group>"; };
+		314DF82A2DCFF7DC00E4FE23 /* BillAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 			children = (
 				314DF8112DCF506500E4FE23 /* Header.swift */,
 				314DF8202DCF8DC600E4FE23 /* ProductCard.swift */,
+				314DF8282DCFD84400E4FE23 /* ReusableScroll.swift */,
+				314DF82A2DCFF7DC00E4FE23 /* BillAlert.swift */,
 			);
 			path = ReusableComponents;
 			sourceTree = "<group>";
@@ -201,9 +207,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				314DF7FD2DCE9B3500E4FE23 /* BrowseView.swift in Sources */,
+				314DF8292DCFD84400E4FE23 /* ReusableScroll.swift in Sources */,
 				314DF81F2DCF56DA00E4FE23 /* HomeViewModel.swift in Sources */,
 				314DF7FE2DCE9B3500E4FE23 /* CheckoutView.swift in Sources */,
 				314DF8262DCFD25800E4FE23 /* ItemManager.swift in Sources */,
+				314DF82B2DCFF7DC00E4FE23 /* BillAlert.swift in Sources */,
 				314DF8272DCFD25800E4FE23 /* ItemModel.swift in Sources */,
 				314DF8212DCF8DC600E4FE23 /* ProductCard.swift in Sources */,
 				314DF8002DCE9B3500E4FE23 /* HomeView.swift in Sources */,
