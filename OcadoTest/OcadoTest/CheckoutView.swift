@@ -16,8 +16,8 @@ struct CheckoutView: View {
                 Header(type: .checkout, totalValue: $homeViewModel.totalValue)
                 
                 if !homeViewModel.checkoutItems.isEmpty {
-                ReusableScroll(type: .checkout, homeViewModel: homeViewModel)
-                
+                    ReusableScroll(type: .checkout, homeViewModel: homeViewModel)
+                    
                     Button {
                         withAnimation {
                             homeViewModel.isBillPresented.toggle()
@@ -47,7 +47,6 @@ struct CheckoutView: View {
                 BillAlert(isPresented: $homeViewModel.isBillPresented, productIds: homeViewModel.checkoutItems.map({$0.productId}))
             }
         }
-        
     }
 }
 
