@@ -8,15 +8,20 @@
 import SwiftUI
 
 struct BrowseView: View {
+    @ObservedObject var homeViewModel: HomeViewModel
+
     var body: some View {
-        VStack {
-            Header(type: .browse)
+        VStack(spacing: 0) {
+            Header(type: .browse, totalValue: $homeViewModel.totalValue)
             
-            Spacer()
+            ReusableScroll(type: .browse, homeViewModel: homeViewModel)
         }
     }
 }
 
+#if DEBUG
 #Preview {
-    BrowseView()
+    let mockManager = MockItemManager()
+    BrowseView(homeViewModel: HomeViewModel(itemManager: mockManager))
 }
+#endif

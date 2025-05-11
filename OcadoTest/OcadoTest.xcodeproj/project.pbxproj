@@ -15,7 +15,26 @@
 		314DF8032DCE9B3500E4FE23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 314DF7F62DCE9B3500E4FE23 /* Assets.xcassets */; };
 		314DF80D2DCE9BE900E4FE23 /* TextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DF80A2DCE9BE900E4FE23 /* TextModifier.swift */; };
 		314DF8132DCF506500E4FE23 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DF8112DCF506500E4FE23 /* Header.swift */; };
+		314DF8172DCF518F00E4FE23 /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = 314DF8162DCF518F00E4FE23 /* items.json */; };
+		314DF81F2DCF56DA00E4FE23 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DF81E2DCF56DA00E4FE23 /* HomeViewModel.swift */; };
+		314DF8212DCF8DC600E4FE23 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DF8202DCF8DC600E4FE23 /* ProductCard.swift */; };
+		314DF8262DCFD25800E4FE23 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DF8232DCFD25800E4FE23 /* ItemManager.swift */; };
+		314DF8272DCFD25800E4FE23 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DF8242DCFD25800E4FE23 /* ItemModel.swift */; };
+		314DF8292DCFD84400E4FE23 /* ReusableScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DF8282DCFD84400E4FE23 /* ReusableScroll.swift */; };
+		314DF82B2DCFF7DC00E4FE23 /* BillAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314DF82A2DCFF7DC00E4FE23 /* BillAlert.swift */; };
+		315788D92DD0A69F0094F416 /* ItemManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315788D62DD0A69F0094F416 /* ItemManagerTests.swift */; };
+		315788DC2DD0A81F0094F416 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315788DB2DD0A81F0094F416 /* HomeViewModelTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		315788CD2DD0A2FA0094F416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 314DF7D22DCE944000E4FE23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 314DF7D92DCE944000E4FE23;
+			remoteInfo = OcadoTest;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		314DF7DA2DCE944000E4FE23 /* OcadoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OcadoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,10 +46,27 @@
 		314DF7FB2DCE9B3500E4FE23 /* OcadoTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcadoTestApp.swift; sourceTree = "<group>"; };
 		314DF80A2DCE9BE900E4FE23 /* TextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifier.swift; sourceTree = "<group>"; };
 		314DF8112DCF506500E4FE23 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		314DF8162DCF518F00E4FE23 /* items.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = items.json; sourceTree = "<group>"; };
+		314DF81E2DCF56DA00E4FE23 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		314DF8202DCF8DC600E4FE23 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		314DF8232DCFD25800E4FE23 /* ItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
+		314DF8242DCFD25800E4FE23 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		314DF8282DCFD84400E4FE23 /* ReusableScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableScroll.swift; sourceTree = "<group>"; };
+		314DF82A2DCFF7DC00E4FE23 /* BillAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillAlert.swift; sourceTree = "<group>"; };
+		315788C92DD0A2FA0094F416 /* OcadoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OcadoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		315788D62DD0A69F0094F416 /* ItemManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManagerTests.swift; sourceTree = "<group>"; };
+		315788DB2DD0A81F0094F416 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		314DF7D72DCE944000E4FE23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		315788C62DD0A2FA0094F416 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				314DF7FC2DCE9B3500E4FE23 /* OcadoTest */,
+				315788D82DD0A69F0094F416 /* OcadoTestTests */,
 				314DF7DB2DCE944000E4FE23 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				314DF7DA2DCE944000E4FE23 /* OcadoTest.app */,
+				315788C92DD0A2FA0094F416 /* OcadoTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,13 +106,16 @@
 			isa = PBXGroup;
 			children = (
 				314DF7FB2DCE9B3500E4FE23 /* OcadoTestApp.swift */,
+				314DF8252DCFD25800E4FE23 /* Data */,
 				314DF7FA2DCE9B3500E4FE23 /* HomeView.swift */,
+				314DF81E2DCF56DA00E4FE23 /* HomeViewModel.swift */,
 				314DF7F72DCE9B3500E4FE23 /* BrowseView.swift */,
 				314DF7F82DCE9B3500E4FE23 /* CheckoutView.swift */,
 				314DF8122DCF506500E4FE23 /* ReusableComponents */,
 				314DF80C2DCE9BE900E4FE23 /* Utils */,
 				314DF7F52DCE9B3500E4FE23 /* Preview Content */,
 				314DF7F62DCE9B3500E4FE23 /* Assets.xcassets */,
+				314DF8162DCF518F00E4FE23 /* items.json */,
 			);
 			path = OcadoTest;
 			sourceTree = "<group>";
@@ -99,8 +140,29 @@
 			isa = PBXGroup;
 			children = (
 				314DF8112DCF506500E4FE23 /* Header.swift */,
+				314DF8202DCF8DC600E4FE23 /* ProductCard.swift */,
+				314DF8282DCFD84400E4FE23 /* ReusableScroll.swift */,
+				314DF82A2DCFF7DC00E4FE23 /* BillAlert.swift */,
 			);
 			path = ReusableComponents;
+			sourceTree = "<group>";
+		};
+		314DF8252DCFD25800E4FE23 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				314DF8232DCFD25800E4FE23 /* ItemManager.swift */,
+				314DF8242DCFD25800E4FE23 /* ItemModel.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		315788D82DD0A69F0094F416 /* OcadoTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				315788D62DD0A69F0094F416 /* ItemManagerTests.swift */,
+				315788DB2DD0A81F0094F416 /* HomeViewModelTests.swift */,
+			);
+			path = OcadoTestTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +187,26 @@
 			productReference = 314DF7DA2DCE944000E4FE23 /* OcadoTest.app */;
 			productType = "com.apple.product-type.application";
 		};
+		315788C82DD0A2FA0094F416 /* OcadoTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 315788CF2DD0A2FA0094F416 /* Build configuration list for PBXNativeTarget "OcadoTestTests" */;
+			buildPhases = (
+				315788C52DD0A2FA0094F416 /* Sources */,
+				315788C62DD0A2FA0094F416 /* Frameworks */,
+				315788C72DD0A2FA0094F416 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				315788CE2DD0A2FA0094F416 /* PBXTargetDependency */,
+			);
+			name = OcadoTestTests;
+			packageProductDependencies = (
+			);
+			productName = OcadoTestTests;
+			productReference = 315788C92DD0A2FA0094F416 /* OcadoTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -137,6 +219,10 @@
 				TargetAttributes = {
 					314DF7D92DCE944000E4FE23 = {
 						CreatedOnToolsVersion = 16.0;
+					};
+					315788C82DD0A2FA0094F416 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 314DF7D92DCE944000E4FE23;
 					};
 				};
 			};
@@ -155,6 +241,7 @@
 			projectRoot = "";
 			targets = (
 				314DF7D92DCE944000E4FE23 /* OcadoTest */,
+				315788C82DD0A2FA0094F416 /* OcadoTestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -166,6 +253,14 @@
 			files = (
 				314DF8022DCE9B3500E4FE23 /* Preview Assets.xcassets in Resources */,
 				314DF8032DCE9B3500E4FE23 /* Assets.xcassets in Resources */,
+				314DF8172DCF518F00E4FE23 /* items.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		315788C72DD0A2FA0094F416 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +272,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				314DF7FD2DCE9B3500E4FE23 /* BrowseView.swift in Sources */,
+				314DF8292DCFD84400E4FE23 /* ReusableScroll.swift in Sources */,
+				314DF81F2DCF56DA00E4FE23 /* HomeViewModel.swift in Sources */,
 				314DF7FE2DCE9B3500E4FE23 /* CheckoutView.swift in Sources */,
+				314DF8262DCFD25800E4FE23 /* ItemManager.swift in Sources */,
+				314DF82B2DCFF7DC00E4FE23 /* BillAlert.swift in Sources */,
+				314DF8272DCFD25800E4FE23 /* ItemModel.swift in Sources */,
+				314DF8212DCF8DC600E4FE23 /* ProductCard.swift in Sources */,
 				314DF8002DCE9B3500E4FE23 /* HomeView.swift in Sources */,
 				314DF8012DCE9B3500E4FE23 /* OcadoTestApp.swift in Sources */,
 				314DF8132DCF506500E4FE23 /* Header.swift in Sources */,
@@ -185,7 +286,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		315788C52DD0A2FA0094F416 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				315788D92DD0A69F0094F416 /* ItemManagerTests.swift in Sources */,
+				315788DC2DD0A81F0094F416 /* HomeViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		315788CE2DD0A2FA0094F416 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 314DF7D92DCE944000E4FE23 /* OcadoTest */;
+			targetProxy = 315788CD2DD0A2FA0094F416 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		314DF7E62DCE944100E4FE23 /* Debug */ = {
@@ -375,6 +493,42 @@
 			};
 			name = Release;
 		};
+		315788D02DD0A2FA0094F416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9TD9ZY99U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dikhtia.OcadoTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OcadoTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OcadoTest";
+			};
+			name = Debug;
+		};
+		315788D12DD0A2FA0094F416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9TD9ZY99U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dikhtia.OcadoTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OcadoTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OcadoTest";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -392,6 +546,15 @@
 			buildConfigurations = (
 				314DF7E92DCE944100E4FE23 /* Debug */,
 				314DF7EA2DCE944100E4FE23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		315788CF2DD0A2FA0094F416 /* Build configuration list for PBXNativeTarget "OcadoTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				315788D02DD0A2FA0094F416 /* Debug */,
+				315788D12DD0A2FA0094F416 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

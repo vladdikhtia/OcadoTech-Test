@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject var homeViewModel: HomeViewModel
+    
+    init(itemManager: ItemManagerProtocol = ItemManager()) {
+        self._homeViewModel = StateObject(wrappedValue: HomeViewModel(itemManager: itemManager))
+    }
+    
     var body: some View {
         TabView {
-            BrowseView()
+            BrowseView(homeViewModel: homeViewModel)
                 .tabItem {
                     Label(
                         "Browse",
@@ -18,7 +24,7 @@ struct HomeView: View {
                     )
                 }
             
-            CheckoutView()
+            CheckoutView(homeViewModel: homeViewModel)
                 .tabItem {
                     Label(
                         "Checkout",
@@ -26,9 +32,14 @@ struct HomeView: View {
                     )
                 }
         }
+        .task {
+            homeViewModel.getProducts()
+        }
     }
 }
 
+#if DEBUG
 #Preview {
     HomeView()
 }
+#endif
