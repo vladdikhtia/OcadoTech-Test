@@ -74,7 +74,7 @@ struct ProductCard: View {
         }
         .customText(
             font: .body,
-            color: .primary,
+            color: .black,
             backgroundColor: .white
         )
         .clipShape(.rect(cornerRadius: 8))
@@ -100,7 +100,7 @@ struct ProductCard: View {
                 .frame(maxWidth: .infinity, alignment: .center)
                 .customText(
                     font: .title,
-                    color: .primary,
+                    color: .black,
                     backgroundColor: title == "-" ? .yellow.opacity(0.5) : .yellow
                 )
         }

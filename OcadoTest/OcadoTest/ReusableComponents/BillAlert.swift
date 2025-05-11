@@ -24,7 +24,7 @@ struct BillAlert: View {
             .padding(16)
             .frame(width: 300)
             .frame(maxHeight: 400, alignment: .top)
-            .background(Color.white)
+            .customText(font: .headline, color: .black, backgroundColor: .white)
             .clipShape(.rect(cornerRadius: 20))
             .shadow(radius: 4)
         }
